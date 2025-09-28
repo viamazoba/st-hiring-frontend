@@ -1,7 +1,17 @@
 import { Button, Box, Typography } from '@mui/material';
 import SettingsIcon from '@mui/icons-material/Settings';
+import { useDispatch } from 'react-redux';
+import { AppDispatch } from '../../app/store';
+import { openSettingsModal } from '../../features/settings/settingsSlice';
 
 const SettingsButton = () => {
+
+    const dispatch = useDispatch<AppDispatch>();
+
+    const handleOpen = () => {
+        dispatch(openSettingsModal());
+    };
+
     return (
         <Box sx={{
             display: 'flex',
@@ -17,6 +27,7 @@ const SettingsButton = () => {
             <Button
                 variant="outlined"
                 startIcon={<SettingsIcon />}
+                onClick={handleOpen}
             >
                 Mobile settings
             </Button>
