@@ -45,23 +45,29 @@ Follow these instructions to get the project up and running on your local machin
 1.  **Clone the repository:**
 
     ```sh
-    git clone <your-repository-url>
+    git clone https://github.com/viamazoba/st-hiring-frontend
     cd st-hiring-frontend
     ```
 
-2.  **Install dependencies:**
+2.  **Use right version of node:**
+
+    ```sh
+    nvm use
+    ```
+
+3.  **Install dependencies:**
 
     ```sh
     yarn install
     ```
 
-3.  **Run the development server:**
+4.  **Run the development server:**
 
     ```sh
     yarn dev
     ```
 
-4.  **Open the application:**
+5.  **Open the application:**
     The application will be running at `http://localhost:5173` (or the next available port).
 
 ---
@@ -70,6 +76,7 @@ Follow these instructions to get the project up and running on your local machin
 
 The project follows a feature-based structure to keep the code organized and scalable.
 
+```
 src/
 ├── app/
 │ └── store.ts # Redux store configuration
@@ -83,3 +90,4 @@ src/
 │ └── settings/ # Redux slice for Settings
 ├── theme.ts # Custom MUI theme configuration
 └── App.tsx # Main application component
+```
