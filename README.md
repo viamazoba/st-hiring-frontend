@@ -80,7 +80,6 @@ The project follows a feature-based structure to keep the code organized and sca
 src/
 ├── app/
 │ └── store.ts # Redux store configuration
-├── assets/ # Static assets like images
 ├── components/
 │ ├── common/ # Shared components (e.g., buttons)
 │ ├── events/ # Components related to the Events feature
